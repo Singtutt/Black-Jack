@@ -1,13 +1,18 @@
 Blueprint:
+
 -Card (X)
 --Playing card(s) ranks
--Deck ()
+
+-Deck (X)
 --Deck management
 a. Number cards = Number rank = Number points
 b. Face cards = 10 points
 c. Ace cards = 11 points
 --Shuffle function
+
 -Hand ()
 --Player's name
 ---Collect all player(s) at the table
 --Player's hand (cards)
+-Game ()
+--

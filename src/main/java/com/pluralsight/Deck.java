@@ -17,15 +17,21 @@ public class Deck {
         }
     }
 
+    public ArrayList<Card> getCards() { // Getter
+        return cards;
+    }
+
     public void shuffle() {
         Collections.shuffle(cards);
     }
 
     public Card split() {
-        if (cards.size() > 0) {
+        if (!cards.isEmpty()) {
             return cards.remove(0);
         } else {
             return null;
         }
     }
+
+
 }
