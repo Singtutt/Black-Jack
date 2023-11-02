@@ -6,11 +6,14 @@ Black Jack Information//
 -Cards dealt (split)
 -"Stay" = Keep current hand
 -"Hit" = Improve hand (card addition)
+--If "Hits" lead to a bust, omit player from game winnings
 
 /Outliers
 -Ace can be either 1 or 11
 -Face cards = 10
 -Get quantity of players / create player seats
+-Player Turns (Choose either "Hit" or "Stay")
+-End of check rounds, reveal winner.
 
 Blueprint//
 
@@ -25,14 +28,17 @@ b. Face cards = 10 points
 c. Ace cards = 11 points
 -Shuffle function
 
-/Hand ()
+/Hand (X)
 -Player's name
 --Collect all player(s) at the table
 -Player's hand (cards)
 
-/Game ()
+/Game Logic (X)
 -Game management
 --Display
 --User(s) Prompts
 --Player(s) Turns
---After "Hit" rounds, determine winner.
+--After "check" rounds, determine winner.
+
+/Start Game (X)
+--Serve as Entry point encapsulating "Game Logic"
